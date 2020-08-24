@@ -1,0 +1,701 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "HospitalInfo",
+  "desc": "HospitalInfo est un chatbot qui fournit des informations sur les hôpitaux au maroc",
+  "culture": "fr-fr",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "Cancel"
+    },
+    {
+      "name": "HospitalCaracteristicsFinding"
+    },
+    {
+      "name": "HospitalFinding"
+    },
+    {
+      "name": "InfoCategorie"
+    },
+    {
+      "name": "LocalisationFinding"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Annuler",
+      "roles": []
+    },
+    {
+      "name": "Categorie",
+      "roles": []
+    },
+    {
+      "name": "Hopital",
+      "roles": [
+        "Nom_Hopital"
+      ]
+    },
+    {
+      "name": "Localisation",
+      "roles": []
+    },
+    {
+      "name": "Province",
+      "roles": []
+    },
+    {
+      "name": "Region",
+      "roles": []
+    },
+    {
+      "name": "Signification",
+      "roles": []
+    },
+    {
+      "name": "Ville",
+      "roles": []
+    }
+  ],
+  "composites": [
+    {
+      "name": "Caracteristique",
+      "children": [
+        "Hopital",
+        "Province",
+        "Ville",
+        "Region",
+        "Categorie"
+      ],
+      "roles": [
+        "Tous les caractéristiques",
+        "Recherche de la Catégorie"
+      ]
+    }
+  ],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "annuler",
+      "intent": "Cancel",
+      "entities": [
+        {
+          "entity": "Annuler",
+          "startPos": 0,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "cancel",
+      "intent": "Cancel",
+      "entities": [
+        {
+          "entity": "Annuler",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "c'est quoi hgr",
+      "intent": "InfoCategorie",
+      "entities": [
+        {
+          "entity": "Signification",
+          "startPos": 0,
+          "endPos": 9
+        },
+        {
+          "entity": "Categorie",
+          "startPos": 11,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "c'est quoi hl",
+      "intent": "InfoCategorie",
+      "entities": [
+        {
+          "entity": "Signification",
+          "startPos": 0,
+          "endPos": 9
+        },
+        {
+          "entity": "Categorie",
+          "startPos": 11,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "c'est quoi hlr",
+      "intent": "InfoCategorie",
+      "entities": [
+        {
+          "entity": "Signification",
+          "startPos": 0,
+          "endPos": 9
+        },
+        {
+          "entity": "Categorie",
+          "startPos": 11,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "c'est quoi hsr",
+      "intent": "InfoCategorie",
+      "entities": [
+        {
+          "entity": "Signification",
+          "startPos": 0,
+          "endPos": 9
+        },
+        {
+          "entity": "Categorie",
+          "startPos": 11,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "dans quelle commune se trouve hay hassani",
+      "intent": "LocalisationFinding",
+      "entities": [
+        {
+          "entity": "Ville",
+          "startPos": 12,
+          "endPos": 18
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 30,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "dans quelle préfecture se trouve hassan ii",
+      "intent": "LocalisationFinding",
+      "entities": [
+        {
+          "entity": "Province",
+          "startPos": 12,
+          "endPos": 21
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 33,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "dans quelle province se trouve l'hôpital hay salam",
+      "intent": "LocalisationFinding",
+      "entities": [
+        {
+          "entity": "Province",
+          "startPos": 12,
+          "endPos": 19
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 41,
+          "endPos": 49
+        }
+      ]
+    },
+    {
+      "text": "dans quelle région se trouve hassan ii",
+      "intent": "LocalisationFinding",
+      "entities": [
+        {
+          "entity": "Region",
+          "startPos": 12,
+          "endPos": 17
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 29,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "dans quelle région se trouve l'hopital hassan ii",
+      "intent": "LocalisationFinding",
+      "entities": [
+        {
+          "entity": "Region",
+          "startPos": 12,
+          "endPos": 17
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 39,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "dans quelle région se trouve l'hopital hay salam",
+      "intent": "LocalisationFinding",
+      "entities": [
+        {
+          "entity": "Region",
+          "startPos": 12,
+          "endPos": 17
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 39,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "dans quelle ville se trouve hay hassani",
+      "intent": "LocalisationFinding",
+      "entities": [
+        {
+          "entity": "Ville",
+          "startPos": 12,
+          "endPos": 16
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 28,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "dans quelle ville se trouve l'hopital hassan ii",
+      "intent": "LocalisationFinding",
+      "entities": [
+        {
+          "entity": "Ville",
+          "startPos": 12,
+          "endPos": 16
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 38,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "dans quelle ville se trouve l'hopital hay salam",
+      "intent": "LocalisationFinding",
+      "entities": [
+        {
+          "entity": "Ville",
+          "startPos": 12,
+          "endPos": 16
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 38,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "dans quelle ville se trouve l'hôpital ibn rochd",
+      "intent": "LocalisationFinding",
+      "entities": [
+        {
+          "entity": "Ville",
+          "startPos": 12,
+          "endPos": 16
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 38,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "dans quelle ville se trouve l'hopital ibn sina",
+      "intent": "LocalisationFinding",
+      "entities": [
+        {
+          "entity": "Ville",
+          "startPos": 12,
+          "endPos": 16
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 38,
+          "endPos": 45
+        }
+      ]
+    },
+    {
+      "text": "je cherche les hôpitaux à errachidida",
+      "intent": "HospitalFinding",
+      "entities": [
+        {
+          "entity": "Hopital",
+          "startPos": 15,
+          "endPos": 22
+        },
+        {
+          "entity": "Localisation",
+          "startPos": 26,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "je cherche les hopitaux à settat",
+      "intent": "HospitalFinding",
+      "entities": [
+        {
+          "entity": "Hopital",
+          "startPos": 15,
+          "endPos": 22
+        },
+        {
+          "entity": "Localisation",
+          "startPos": 26,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "je cherche les hopitaux de settat",
+      "intent": "HospitalFinding",
+      "entities": [
+        {
+          "entity": "Hopital",
+          "startPos": 15,
+          "endPos": 22
+        },
+        {
+          "entity": "Localisation",
+          "startPos": 27,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "je cherche un hôpital",
+      "intent": "HospitalFinding",
+      "entities": [
+        {
+          "entity": "Hopital",
+          "startPos": 14,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "où se trouve l'hopital hassan ii",
+      "intent": "LocalisationFinding",
+      "entities": [
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 23,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "que signifie hgr",
+      "intent": "InfoCategorie",
+      "entities": [
+        {
+          "entity": "Signification",
+          "startPos": 4,
+          "endPos": 11
+        },
+        {
+          "entity": "Categorie",
+          "startPos": 13,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "que signifie hl",
+      "intent": "InfoCategorie",
+      "entities": [
+        {
+          "entity": "Signification",
+          "startPos": 4,
+          "endPos": 11
+        },
+        {
+          "entity": "Categorie",
+          "startPos": 13,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "que signifie hsr",
+      "intent": "InfoCategorie",
+      "entities": [
+        {
+          "entity": "Signification",
+          "startPos": 4,
+          "endPos": 11
+        },
+        {
+          "entity": "Categorie",
+          "startPos": 13,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "que signifie sgr",
+      "intent": "InfoCategorie",
+      "entities": [
+        {
+          "entity": "Signification",
+          "startPos": 4,
+          "endPos": 11
+        },
+        {
+          "entity": "Categorie",
+          "startPos": 13,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "que veut dire hgr",
+      "intent": "InfoCategorie",
+      "entities": [
+        {
+          "entity": "Signification",
+          "startPos": 4,
+          "endPos": 7
+        },
+        {
+          "entity": "Categorie",
+          "startPos": 14,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "quelle est la caractéristique de l'hopital hay hassani",
+      "intent": "HospitalCaracteristicsFinding",
+      "entities": [
+        {
+          "entity": "Caracteristique",
+          "role": "Recherche de la Catégorie",
+          "startPos": 14,
+          "endPos": 28
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 43,
+          "endPos": 53
+        }
+      ]
+    },
+    {
+      "text": "quelle est la catégorie de l'hôpital hassan ii",
+      "intent": "HospitalCaracteristicsFinding",
+      "entities": [
+        {
+          "entity": "Caracteristique",
+          "role": "Recherche de la Catégorie",
+          "startPos": 14,
+          "endPos": 22
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 37,
+          "endPos": 45
+        }
+      ]
+    },
+    {
+      "text": "quelles sont les caractéristiques de l'hôpital hassan ii",
+      "intent": "HospitalCaracteristicsFinding",
+      "entities": [
+        {
+          "entity": "Caracteristique",
+          "role": "Tous les caractéristiques",
+          "startPos": 17,
+          "endPos": 32
+        },
+        {
+          "entity": "Hopital",
+          "role": "Nom_Hopital",
+          "startPos": 47,
+          "endPos": 55
+        }
+      ]
+    },
+    {
+      "text": "quels sont les hôpitaux à errachidia",
+      "intent": "HospitalFinding",
+      "entities": [
+        {
+          "entity": "Hopital",
+          "startPos": 15,
+          "endPos": 22
+        },
+        {
+          "entity": "Localisation",
+          "startPos": 26,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "quels sont les hôpitaux à midelt",
+      "intent": "HospitalFinding",
+      "entities": [
+        {
+          "entity": "Hopital",
+          "startPos": 15,
+          "endPos": 22
+        },
+        {
+          "entity": "Localisation",
+          "startPos": 26,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "quels sont les hôpitaux se trouvant dans la province de settat",
+      "intent": "HospitalFinding",
+      "entities": [
+        {
+          "entity": "Hopital",
+          "startPos": 15,
+          "endPos": 22
+        },
+        {
+          "entity": "Province",
+          "startPos": 44,
+          "endPos": 51
+        },
+        {
+          "entity": "Localisation",
+          "startPos": 56,
+          "endPos": 61
+        }
+      ]
+    },
+    {
+      "text": "quels sont les hôpitaux se trouvant dans la région de midelt",
+      "intent": "HospitalFinding",
+      "entities": [
+        {
+          "entity": "Hopital",
+          "startPos": 15,
+          "endPos": 22
+        },
+        {
+          "entity": "Region",
+          "startPos": 44,
+          "endPos": 49
+        },
+        {
+          "entity": "Localisation",
+          "startPos": 54,
+          "endPos": 59
+        }
+      ]
+    },
+    {
+      "text": "qu'est ce que hl",
+      "intent": "InfoCategorie",
+      "entities": [
+        {
+          "entity": "Signification",
+          "startPos": 0,
+          "endPos": 12
+        },
+        {
+          "entity": "Categorie",
+          "startPos": 14,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "qu'est ce que hsr",
+      "intent": "InfoCategorie",
+      "entities": [
+        {
+          "entity": "Signification",
+          "startPos": 0,
+          "endPos": 12
+        },
+        {
+          "entity": "Categorie",
+          "startPos": 14,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "qui suis je",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "retour",
+      "intent": "Cancel",
+      "entities": [
+        {
+          "entity": "Annuler",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "stop",
+      "intent": "Cancel",
+      "entities": [
+        {
+          "entity": "Annuler",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    }
+  ],
+  "settings": []
+}

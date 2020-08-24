@@ -1,0 +1,15 @@
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\bin\Debug\netcoreapp2.1\HopitalInfo.deps.json
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\bin\Debug\netcoreapp2.1\HopitalInfo.runtimeconfig.json
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\bin\Debug\netcoreapp2.1\HopitalInfo.runtimeconfig.dev.json
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\bin\Debug\netcoreapp2.1\HopitalInfo.dll
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\obj\Debug\netcoreapp2.1\HopitalInfo.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\obj\Debug\netcoreapp2.1\HopitalInfo.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\obj\Debug\netcoreapp2.1\HopitalInfo.RazorAssemblyInfo.cache
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\obj\Debug\netcoreapp2.1\HopitalInfo.RazorAssemblyInfo.cs
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\obj\Debug\netcoreapp2.1\HopitalInfo.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\obj\Debug\netcoreapp2.1\HopitalInfo.AssemblyInfo.cs
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\obj\Debug\netcoreapp2.1\HopitalInfo.RazorTargetAssemblyInfo.cache
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\bin\Debug\netcoreapp2.1\HopitalInfo.pdb
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\obj\Debug\netcoreapp2.1\HopitalInfo.dll
+C:\Users\hp\source\repos\HopitalInfo\HopitalInfo\obj\Debug\netcoreapp2.1\HopitalInfo.pdb

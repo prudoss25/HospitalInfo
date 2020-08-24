@@ -1,0 +1,33 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Bienvenu sur le Bot Hospital Information",
+      "wrap": true,
+      "weight": "Bolder",
+      "size": "Medium"
+    },
+    {
+      "type": "ImageSet",
+      "imageSize": "Stretch",
+      "images": [
+        {
+          "type": "Image",
+          "size": "Stretch",
+          "url": "HopitalInfo.Cards.Hopital.jpg",
+          "style": "Person",
+          "height": "Stretch"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Ce bot vous aide à avoir plus d'informations sur les Hôpitaux et centres de santé au Maroc.\nPlus précisément vous pouvez avoir des informations sur la localisation (Région, province, préfecture ou ville) et la catégorie d'un hôpital. Vous pouvez aussi avoir la liste des Hôpitaux disponibles en fonctions des caractéristiques pré citées.",
+      "wrap": true
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "lang": "fr-fr"
+}

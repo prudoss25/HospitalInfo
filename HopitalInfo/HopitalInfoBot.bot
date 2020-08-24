@@ -1,0 +1,28 @@
+{
+  "name": "HopitalInfoBot",
+  "description": "",
+  "services": [
+    {
+      "type": "endpoint",
+      "appId": "",
+      "appPassword": "",
+      "endpoint": "http://localhost:3978/api/messages",
+      "id": "15e99100-b786-11e9-b401-41973c97f96d",
+      "name": "http://localhost:3978/api/messages"
+    },
+    {
+      "type": "luis",
+      "appId": "bd547083-015a-4ee1-89e7-671c9594ce35",
+      "authoringKey": "78a649cf56e34bb0b314ddb517173e35",
+      "region": "westus",
+      "subscriptionKey": "78a649cf56e34bb0b314ddb517173e35",
+      "id": "cba55180-9cdf-11e9-8536-57987c107eec",
+      "name": "HospitalInfo",
+      "version": "0.1"
+    }
+  ],
+  "padlock": "",
+  "version": "2.0",
+  "path": "C:\\Users\\hp\\source\\repos\\HopitalInfo\\HopitalInfo\\HopitalInfoBot.bot",
+  "overrides": null
+}
